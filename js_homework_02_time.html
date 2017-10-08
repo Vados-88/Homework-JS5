@@ -1,0 +1,20 @@
+<script>
+
+/*Задача: Пользователь вводит количество секунд, определить сколько часов минут секунд в указанном количестве секунд.
+.*/
+
+	var time_seconds = prompt("Введите количество секунд");
+		time_seconds = parseInt(time_seconds);
+	var time_hours = 0;
+	var time_minutes = 0;
+	
+	time_hours = parseInt(time_seconds / 3600);
+	time_seconds = time_seconds - (time_hours * 3600);
+
+	time_minutes = parseInt(time_seconds / 60);
+	time_seconds = time_seconds - (time_minutes * 60);
+	 
+	alert( "Это составляет: " + time_hours + " час(ов), " + time_minutes + " минут(ы), " + time_seconds +" секунд");
+
+
+</script>
